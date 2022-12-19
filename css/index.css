@@ -1,0 +1,133 @@
+﻿/*---------zeroing out-----------*/
+
+*{
+	margin:0;
+	padding:0;
+	border: 0;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:inherit;
+}
+
+ul, li{
+	list-style:none;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-size:inherit;
+}
+
+/*-----------mainStyles-------------*/
+
+.wrapper{
+	width:1000px;
+	height:900px;
+	margin: 10px auto 10px auto;
+	//background:linear-gradient(45deg, #aef, #fea);
+	//border:1px solid transparent;
+}
+.fon{
+	width: 900px;
+	height: 600px;
+	margin: 100px auto 0 auto;
+	//background: radial-gradient(at top left, #ffa, #0fa);
+	position:relative;
+	transform-style:preserve-3d;
+	perspective:800px;
+}
+.pic{
+	width:500px;
+	height:300px;
+	border:1px solid black;
+	background: linear-gradient(90deg, #ff0, #0ff);
+	position:absolute;
+	top:150px;
+	left:200px;
+	box-shadow:0px 0px 5px 1px grey;
+}
+
+#pic1{
+	transform: translateX(0px) translateZ(210px) rotateX(0deg);
+	background:url(../img/1.jpg);
+	background-size:cover;
+	filter:saturate(175%);
+}
+
+
+#pic2{
+	transform: translateX(60px) translateZ(170px) rotateX(-15deg);
+	background:url(../img/2.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+
+#pic3{
+	transform: translateX(120px) translateZ(140px) rotateX(-15deg);
+	background:url(../img/3.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+
+#pic4{
+	transform: translateX(180px) translateZ(110px) rotateX(-15deg);
+	background:url(../img/4.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+
+#pic5{
+	transform: translateX(-180px) translateZ(110px) rotateX(-15deg);
+	background:url(../img/5.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+
+#pic6{
+	transform: translateX(-120px) translateZ(140px) rotateX(-15deg);
+	background:url(../img/6.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+
+#pic7{
+	transform: translateX(-60px) translateZ(170px) rotateX(-15deg);
+	background:url(../img/7.jpg);
+	background-size:cover;
+	filter:grayscale(75%) blur(1px);
+}
+#left{
+	width:390px;
+	height:290px;
+	//border:1px dashed red;
+	position:absolute;
+	top:150px;
+	left:51px;
+	transform:translateZ(250px);
+}
+
+#left:hover{
+	cursor:pointer;
+}
+
+#right{
+	width:390px;
+	height:290px;
+	//border:1px dashed red;
+	position:absolute;
+	top:150px;
+	left:451px;
+	transform:translateZ(250px);
+}
+
+#right:hover{
+	cursor:pointer;
+}
